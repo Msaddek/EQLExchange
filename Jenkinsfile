@@ -17,7 +17,7 @@ pipeline {
     }
    
     stages {
-        stage('Checkout MatchEngine') {
+        stage('Checkout Project') {
             steps {
                 echo "-=- Checout project -=-"
                 git branch: 'master', url: 'https://github.com/Msaddek/EQLExchange'
