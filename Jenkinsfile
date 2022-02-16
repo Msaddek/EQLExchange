@@ -15,9 +15,7 @@ pipeline {
         AWS_EB_ENVIRONMENT = '3legacy-env'
         AWS_EB_APP_VERSION = "${BUILD_ID}-locale"
     }
-    tools {
-        maven 'MVN'
-    }
+
    
     stages {
         stage('Checkout Project') {
